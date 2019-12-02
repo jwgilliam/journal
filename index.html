@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <script type="module" src="./scripts/main.js"></script>
+</head>
+<body>
+ <h1>Daily Journal</h1>
+    <fieldset>
+      <label for ="journalDate">Date of Entry</label>
+      <input type="date" name="journalDate" id="journalDate">
+    </fieldset>
+  <fieldset>
+  <label for="Concepts Covered">Concepts Covered</label>
+  <input type="text" name="conceptsCovered" id="conceptsCovered">
+  </fieldset>
+  <fieldset>
+    <label for="journalEntry">Journal Entry</label>
+    <textarea name="journalEntry" id="journalEntry" cols="30" rows="10"></textarea>
+  </fieldset>
+  <fieldset>
+    <label for="mood">Mood for the Day</label>
+    <select name="mood" id="mood">
+      <option value="Sad">Sad</option>
+      <option value="Tired">Tired</option>
+      <option value="Okie Dokie">Okie dokie</option>
+      <option value="Frustrated">Frustrated</option>
+    </select>
+  </fieldset>
+    <input type="button" value="Record Journal Entry">
+<div id="entryLog" class="entryLog"></div>
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
